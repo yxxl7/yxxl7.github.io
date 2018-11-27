@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+    <div class="header">
+        <img src="header.jpg"/>
+    </div>
+    
+    <head>
+        <title>Job Hunting Website</title>
+        <link rel="stylesheet" type="text/css"
+href="styles.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    </head>
+    
+    <body>
+        <div class="navbar">
+            <a class="active" href="index.html">HOME</a>
+            <a href="findjob.html">FIND JOBS</a>
+            <a href="joblisting.html">JOB LISTING</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="redirect()">CONTACT</button>
+        <div class="dropdown-content">
+            <a href="Contactus.html">CONTACT US</a>
+            <a href="Aboutus.html">ABOUT US</a>
+    </div>
+  </div> 
+</div>
+    
+<script>        
+      function redirect(){
+          window.location.href="Contactus.html";
+      }  
+</script>        
+        
+        
+        
+        <h1 style="color: #49205E;">Welcome to our Job Hunting Site!</h1>
+        <h2 style="color: #6e3889" align="center">Click below to start exploring our site!</h2>   
+        
+        <p align="center">
+        <button align="center" id="start" onclick="myFunction()">Start!</button>
+        </p>
+
+    
+        <p align="center" style="font-size: 25px; margin-left: 100px; margin-right: 100px; margin-top: 50px;" id="intro"></p>
+        
+            
+        <script>
+        function myFunction() {
+        var txt;
+        var person = prompt("Please enter your name:", "Name here");
+        if (person == null || person == "") {
+            txt = "User cancelled the prompt.";
+        } else {
+            txt = "Hello " + person + ", we hope your day is going great! Welcome to our job hunting website that incorporates statistics, reviews, and analytical data to help Commerce students (as well as anyone else who just wants to learn more about a career in business) find a career that is suited to their wants and needs! We hope that we will be able to answer any questions you have about your future career path, as well as recommend you some awesome job positions!";
+        }
+        document.getElementById("intro").innerHTML = txt;
+        }
+        </script>
+
+       
+              
+        
+        
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="color: white">Find the right career</h1>
+            <a href="joblisting.html"><button class="btn">Start here</button></a>
+            
+        </div>    
+    </div>    
+        
+    
+        
+    </body>
+</html>

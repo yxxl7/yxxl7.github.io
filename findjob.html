@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+    <div class="header">
+        <img src="Unknown.png"/>
+    </div>
+    
+    <head>
+        <title>Job finding</title>
+        <link rel="stylesheet" type="text/css"
+href="styles.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    </head>
+    
+    <body>  
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a class="active" href="findjob.html">FIND JOBS</a>
+            <a href="joblisting.html">JOB LISTING</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="redirect()">CONTACT</button>
+        <div class="dropdown-content">
+            <a href="Contactus.html">CONTACT US</a>
+            <a href="Aboutus.html">ABOUT US</a>
+    </div>
+  </div> 
+</div>
+    
+<script>        
+      function redirect(){
+          window.location.href="Contactus.html";
+      }  
+</script>
+        
+        
+        
+        <h1 style="font-size: 50px; color: #49205E">Job Finding</h1>
+        
+<div class="row">       
+    
+        <P style="font-size: 25px; color: #5e2058; font-family: Arial">Hi there! This page will help you find out which area in business you might want to work in through 9 quick and simple questions! Just pick an answer: either A, B, C, or D. </P> 
+
+    
+    
+    
+    
+<div class="column" style="font-family: Arial">       
+    <form id="quiz" name="quiz">
+
+    <p style="font-size: 20px">1. In a work setting, do you enjoy sitting in one place for a long time (eg. spending 8 hours in a office per day)?</p>
+    <input type="radio" id="mc" name="question1" value="A">Yes<br>
+    <input type="radio" id="mc" name="question1" value="B">Somewhat<br>
+    <input type="radio" id="mc" name="question1" value="C">Not really<br>
+    <input type="radio" id="mc" name="question1" value="D">No<br>
+    
+    <p style="font-size: 20px">2. Do you enjoy using your quantitative skills to solve problems? </p>
+    <input type="radio" id="mc" name="question2" value="A">Yes<br>
+    <input type="radio" id="mc" name="question2" value="B">Sometimes<br>
+    <input type="radio" id="mc" name="question2" value="C">Not really<br>
+    <input type="radio" id="mc" name="question2" value="D">No<br>
+    
+    <p style="font-size: 20px">3. Are you proficient with using Excel?</p>
+    <input type="radio" id="mc" name="question3" value="A">Yes<br>
+    <input type="radio" id="mc" name="question3" value="B">Somewhat<br>
+    <input type="radio" id="mc" name="question3" value="C">Not really<br>
+    <input type="radio" id="mc" name="question3" value="D">No<br>
+        
+    <p style="font-size: 20px">4. Do you enjoy networking and meeting new people?</p>
+    <input type="radio" id="mc" name="question4" value="A">No, I like my alone time<br>
+    <input type="radio" id="mc" name="question4" value="B">I sometimes enjoy networking<br>
+    <input type="radio" id="mc" name="question4" value="C">Yes, I enjoy networking<br>
+    <input type="radio" id="mc" name="question4" value="D">YES! I am an avid networker<br>
+    
+    <p style="font-size: 20px">5. Do you enjoy following step by step rules when completing projects or assignments?</p>
+    <input type="radio" id="mc" name="question5" value="A">Yes<br>
+    <input type="radio" id="mc" name="question5" value="B">Sometimes<br>
+    <input type="radio" id="mc" name="question5" value="C">Not really<br>
+    <input type="radio" id="mc" name="question5" value="D">No<br>
+    
+    <p style="font-size: 20px">6. Do you enjoy working in a slow paced or fast paced environment?</p>
+    <input type="radio" id="mc" name="question6" value="A">Very slow<br>
+    <input type="radio" id="mc" name="question6" value="B">Slow<br>
+    <input type="radio" id="mc" name="question6" value="C">Fast paced<br>
+    <input type="radio" id="mc" name="question6" value="D">Very fast paced<br>
+    
+    <p style="font-size: 20px">7. Do you enjoy taking risks in the workplace?</p>
+    <input type="radio" id="mc" name="question7" value="A">I do not enjoy taking risks<br>
+    <input type="radio" id="mc" name="question7" value="B">I seldomly like taking risks<br>
+    <input type="radio" id="mc" name="question7" value="C">I sometimes enjoy taking risks<br>
+    <input type="radio" id="mc" name="question7" value="D">I am a huge risk taker<br>
+        
+    <p style="font-size: 20px">8. Are you a detail-oriented person?</p>
+    <input type="radio" id="mc" name="question8" value="A">Very detail oriented<br>
+    <input type="radio" id="mc" name="question8" value="B">Somewhat detail oriented<br>
+    <input type="radio" id="mc" name="question8" value="C">Not really detail oriented<br>
+    <input type="radio" id="mc" name="question8" value="D">Not detail oriented at all<br>
+    
+    <p style="font-size: 20px">9. Do you enjoy working in a team setting? </p>
+    <input type="radio" id="mc" name="question9" value="A">Yes<br>
+    <input type="radio" id="mc" name="question9" value="B">Sometimes<br>
+    <input type="radio" id="mc" name="question9" value="C">Not really<br>
+    <input type="radio" id="mc" name="question9" value="D">No<br>
+    
+    <p style="font-size: 20px">Scroll up for the answer!</p>
+    
+    <input id="button" type="button" value="submit" onclick="check();"> 
+     
+    </form>
+</div>
+  
+    
+    
+        
+<div class="column">
+
+<div id="after_submit" style="font-family: Arial">
+<p id="message" style="font-size: 30px; margin-left: 230px; margin-top: 200px"></p>
+<img id="picture" width="600px" style="margin-left: 20px">
+<button id="exploremore" onclick="check2()">EXPLORE MORE</button>
+</div>
+</div> 
+</div>
+   
+        
+        
+        
+        
+        
+<script>
+function check() {
+var question1=document.quiz.question1.value;
+var question2=document.quiz.question2.value;
+var question3=document.quiz.question3.value;
+var question4=document.quiz.question4.value;
+var question5=document.quiz.question5.value;
+var question6=document.quiz.question6.value;
+var question7=document.quiz.question7.value;
+var question8=document.quiz.question8.value;
+var question9=document.quiz.question9.value;
+var A = 0;
+var B = 0;
+var C = 0;
+var D = 0; 
+    
+    if (question1 == "A") {
+        A++;
+    }
+    if (question1 == "B") {
+        B++;
+    }
+    if (question1 == "C") {
+        C++;
+    }
+    if (question1 == "D") {
+        D++;
+    }
+    if (question2 == "A") {
+        A++;
+    }
+    if (question2 == "B") {
+        B++;
+    }
+    if (question2 == "C") {
+        C++;
+    }
+    if (question2 == "D") {
+        D++;
+    }
+    if (question3 == "A") {
+        A++;
+    }
+    if (question3 == "B") {
+        B++;
+    }
+    if (question3 == "C") {
+        C++;
+    }
+    if (question3 == "D") {
+        D++;
+    }
+    if (question4 == "A") {
+        A++;
+    }
+    if (question4 == "B") {
+        B++;
+    }
+    if (question4 == "C") {
+        C++;
+    }
+    if (question4 == "D") {
+        D++;
+    }
+    if (question5 == "A") {
+        A++;
+    }
+    if (question5 == "B") {
+        B++;
+    }
+    if (question5 == "C") {
+        C++;
+    }
+    if (question5 == "D") {
+        D++;
+    }
+    
+   if (question6 == "A") {
+        A++;
+    }
+    if (question6 == "B") {
+        B++;
+    }
+    if (question6 == "C") {
+        C++;
+    }
+    if (question6 == "D") {
+        D++;
+    }
+    if (question7 == "A") {
+        A++;
+    }
+    if (question7 == "B") {
+        B++;
+    }
+    if (question7 == "C") {
+        C++;
+    }
+    if (question7 == "D") {
+        D++;
+    }
+    if (question8 == "A") {
+        A++;
+    }
+    if (question8 == "B") {
+        B++;
+    }
+    if (question8 == "C") {
+        C++;
+    }
+    if (question8 == "D") {
+        D++;
+    }
+    if (question9 == "A") {
+        A++;
+    }
+    if (question9 == "B") {
+        B++;
+    }
+    if (question9 == "C") {
+        C++;
+    }
+    if (question9 == "D") {
+        D++;
+    }
+ 
+    
+var messages = ["Accounting", "Marketing", "Finance", "Combined Major in Business and Computer Science", "Please try again!"];
+var pictures = ["Accounting-1.jpg", "Marketing-1.jpg", "Finance-1.jpg", "BUCS-1.jpeg", "question-mark.jpg"];
+var range; 
+    
+    if (A > B && A > C && A > D) {
+        range = 0;
+    }
+    if (B > A && B > C && B > D) {
+        range = 1;
+    }
+    if (C > A && C > B && C > D) {
+        range = 2;
+    }
+    if (D > A && D > B && D > C) {
+        range = 3;
+    }
+    
+document.getElementById("after_submit").style.visibility="visible";  
+    
+document.getElementById("message").innerHTML=messages[range];  
+document.getElementById("picture").src=pictures[range];
+}   
+
+</script>
+        
+        
+        
+        
+        
+        
+        
+        
+<script>
+function check2() {
+var question1=document.quiz.question1.value;
+var question2=document.quiz.question2.value;
+var question3=document.quiz.question3.value;
+var question4=document.quiz.question4.value;
+var question5=document.quiz.question5.value;
+var question6=document.quiz.question6.value;
+var question7=document.quiz.question7.value;
+var question8=document.quiz.question8.value;
+var question9=document.quiz.question9.value;
+var A = 0;
+var B = 0;
+var C = 0;
+var D = 0; 
+    
+    if (question1 == "A") {
+        A++;
+    }
+    if (question1 == "B") {
+        B++;
+    }
+    if (question1 == "C") {
+        C++;
+    }
+    if (question1 == "D") {
+        D++;
+    }
+    if (question2 == "A") {
+        A++;
+    }
+    if (question2 == "B") {
+        B++;
+    }
+    if (question2 == "C") {
+        C++;
+    }
+    if (question2 == "D") {
+        D++;
+    }
+    if (question3 == "A") {
+        A++;
+    }
+    if (question3 == "B") {
+        B++;
+    }
+    if (question3 == "C") {
+        C++;
+    }
+    if (question3 == "D") {
+        D++;
+    }
+    if (question4 == "A") {
+        A++;
+    }
+    if (question4 == "B") {
+        B++;
+    }
+    if (question4 == "C") {
+        C++;
+    }
+    if (question4 == "D") {
+        D++;
+    }
+    if (question5 == "A") {
+        A++;
+    }
+    if (question5 == "B") {
+        B++;
+    }
+    if (question5 == "C") {
+        C++;
+    }
+    if (question5 == "D") {
+        D++;
+    }
+    
+   if (question6 == "A") {
+        A++;
+    }
+    if (question6 == "B") {
+        B++;
+    }
+    if (question6 == "C") {
+        C++;
+    }
+    if (question6 == "D") {
+        D++;
+    }
+    if (question7 == "A") {
+        A++;
+    }
+    if (question7 == "B") {
+        B++;
+    }
+    if (question7 == "C") {
+        C++;
+    }
+    if (question7 == "D") {
+        D++;
+    }
+    if (question8 == "A") {
+        A++;
+    }
+    if (question8 == "B") {
+        B++;
+    }
+    if (question8 == "C") {
+        C++;
+    }
+    if (question8 == "D") {
+        D++;
+    }
+    if (question9 == "A") {
+        A++;
+    }
+    if (question9 == "B") {
+        B++;
+    }
+    if (question9 == "C") {
+        C++;
+    }
+    if (question9 == "D") {
+        D++;
+    }
+
+var websites = ["Accounting.html", "Marketing.html", "Finance.html", "BUCS.html", "findjob.html"];
+var range; 
+    
+    if (A > B && A > C && A > D) {
+        range = 0;
+    }
+    if (B > A && B > C && B > D) {
+        range = 1;
+    }
+    if (C > A && C > B && C > D) {
+        range = 2;
+    }
+    if (D > A && D > B && D > C) {
+        range = 3;
+    }
+    
+document.getElementById("after_submit").style.visibility="visible";  
+    
+window.location.href=websites[range];
+}
+</script>
+    </body>
+</html>

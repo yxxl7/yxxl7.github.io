@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+    <div class="header">
+        <img src="Unknown.png"/>
+    </div>
+    
+    <head>
+        <title>Job Hunting Website</title>
+        <link rel="stylesheet" type="text/css"
+href="styles.css"/>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <div class="navbar">
+            <a class="active" href="index.html">HOME</a>
+            <a href="findjob.html">FIND JOBS</a>
+            <a href="joblisting.html">JOB LISTING</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="redirect()">CONTACT</button>
+        <div class="dropdown-content">
+            <a href="Contactus.html">CONTACT US</a>
+            <a href="Aboutus.html">ABOUT US</a>
+    </div>
+  </div> 
+</div>
+    
+
+<div id="body">        
+
+    <h1 align=center style="color: #49205E">Sales and Marketing Manager (Yoga Design Lab)</h1>    <br>
+    
+    <p style="font-size: 20px; margin-left: 30px; margin-right: 30px; margin-bottom: 50px; color: #5e2058">
+Yoga Design Lab is looking for a Japanese Sales and Marketing manager based in Japan to manage and expand our retail operation for the region. Bonus: You can work from home!<br>
+Blending fashion-forward design elements with innovative functionality and bio-renewable consciousness is key to the Yoga Design Lab approach. From our insulated stainless-steel water bottles (reduce your use of plastic water bottles please!), to our combo yoga mats comprised of biodegradable natural tree rubber, to the water based inks used in our printed designs, we can all make a difference with the products we buy
+ </p>
+    
+     <a style="margin-left: 50px" href="https://yogadesignlab.com">https://yogadesignlab.com</a>
+    
+    <div id="map"></div>
+    <br>
+</div>    
+    
+    
+<script>
+      function initMap() {
+        var myLatLng = {lat: 49.180257, lng: -123.069580};
+         
+ // Create a map object and specify the DOM element
+        // for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 16
+        });
+          
+      // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX9TwRU4GPFK8q36cdzjArYYHkwX9iUqo&callback=initMap"
+        async defer></script>    
+          
+             
+    </body>
+</html>

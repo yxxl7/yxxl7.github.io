@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+    <div class="header">
+        <img src="Unknown.png"/>
+    </div>
+    
+    <head>
+        <title>Job Hunting Website</title>
+        <link rel="stylesheet" type="text/css"
+href="styles.css"/>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <div class="navbar">
+            <a class="active" href="index.html">HOME</a>
+            <a href="findjob.html">FIND JOBS</a>
+            <a href="joblisting.html">JOB LISTING</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="redirect()">CONTACT</button>
+        <div class="dropdown-content">
+            <a href="Contactus.html">CONTACT US</a>
+            <a href="Aboutus.html">ABOUT US</a>
+    </div>
+  </div> 
+</div>
+    
+
+<div id="body">        
+
+    <h1 align=center style="color: #49205E">Business and finance internship </h1>    <br>
+    
+    <p style="font-size: 20px; margin-left: 30px; margin-right: 30px; margin-bottom: 50px; color: #5e2058">Would you like to gain Business, Finance, and Accounting experience while having an amazing travel adventure? Consider interning abroad in one of the worlds fastest-growing regions. <br> 
+    Tesla, Amazon, General Electric and many others are looking for Business & Finance interns to fill positions in their international offices. These companies have partnered with CareerUp to help them recruit talented college students and young professionals.  <br>
+    Not only does CareerUp help connect you with a world-class internship, our program also provides high-quality accommodation, transportation, visa processing, and a full schedule of cultural and professional events.
+    </p>
+    
+     <a style="margin-left: 50px" href="https://www.careerup.com/?utm_source=linkedin&utm_campaign=new&utm_medium=linkedin">https://www.careerup.com/?utm_source=linkedin&utm_campaign=new&utm_medium=linkedin</a>
+    
+    <div id="map"></div>
+    <br>
+</div>    
+    
+    
+<script>
+      function initMap() {
+        var myLatLng = {lat: 22.281794, lng: 114.156812};
+         
+ // Create a map object and specify the DOM element
+        // for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 16
+        });
+          
+      // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX9TwRU4GPFK8q36cdzjArYYHkwX9iUqo&callback=initMap"
+        async defer></script>    
+          
+             
+    </body>
+</html>

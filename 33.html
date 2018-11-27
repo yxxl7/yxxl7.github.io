@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <div class="header">
+        <img src="Unknown.png"/>
+    </div>
+    
+    <head>
+        <title>Job Hunting Website</title>
+        <link rel="stylesheet" type="text/css"
+href="styles.css"/>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <div class="navbar">
+            <a class="active" href="index.html">HOME</a>
+            <a href="findjob.html">FIND JOBS</a>
+            <a href="joblisting.html">JOB LISTING</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="redirect()">CONTACT</button>
+        <div class="dropdown-content">
+            <a href="Contactus.html">CONTACT US</a>
+            <a href="Aboutus.html">ABOUT US</a>
+    </div>
+  </div> 
+</div>
+    
+
+<div id="body">        
+
+    <h1 align=center style="color: #49205E">Software Development Engineer</h1>    <br>
+    
+    <p style="font-size: 20px; margin-left: 30px; margin-right: 30px; margin-bottom: 50px; color: #5e2058">
+Would you like to work on one of the world's largest transactional distributed systems? How about working with customers and peers from the entire range of Amazon's business on cool new features? Whether you're passionate about building highly scalable and reliable systems or a software developer who likes to solve business problems, Identity & Tax Services is the place for you<br>
+Identity & Tax Services owns the identity and account information for all users of Amazon's ecommerce Platform, whether they are buyers, sellers or web services developers. Every aspect of our business interacts with our systems, if our systems are not up and running the company stops, and if we're not rapidly delivering new, easy to use features the whole company slows down. We're at the intersection of can never go down, and need to move at agile, internet speed. We're the hub of Amazon's massive, worldwide service-oriented architecture<br>
+We are looking for software engineers who thrive on complex problems and relish the challenge of operating complex and mission critical systems under extreme loads. Our systems manage hundreds of millions of records, and responds to millions of service requests per minute. Do you think you are up to the challenge? Or would you like to learn more and stretch your skills and career?<br>
+The successful candidate is expected to contribute to all parts of the software development and deployment lifecycle, including design, development, documentation, testing and operations. They must possess strong verbal and written communication skills, be self-driven and deliver high quality results in a fast paced environment. They need to really enjoy working closely with their peers in a group of very smart and talented engineers<br>
+We're looking for people who are smart and can get things done, though the following skill sets provide a good foundation for a quick ramp up to being productive in our Java, Linux and Oracle-based environment. We're looking for a range of experience, from brilliant and motivated new college graduates to technical leaders with the scars and battle-tested wisdom
+ </p>
+    
+     <a style="margin-left: 50px" href="https://www.amazon.ca">https://www.amazon.ca</a>
+    
+    <div id="map"></div>
+    <br>
+</div>    
+    
+    
+<script>
+      function initMap() {
+        var myLatLng = {lat: 49.281021, lng: -123.116991};
+         
+ // Create a map object and specify the DOM element
+        // for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 16
+        });
+          
+      // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX9TwRU4GPFK8q36cdzjArYYHkwX9iUqo&callback=initMap"
+        async defer></script>    
+          
+             
+    </body>
+</html>

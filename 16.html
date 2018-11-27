@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+    <div class="header">
+        <img src="Unknown.png"/>
+    </div>
+    
+    <head>
+        <title>Job Hunting Website</title>
+        <link rel="stylesheet" type="text/css"
+href="styles.css"/>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <div class="navbar">
+            <a class="active" href="index.html">HOME</a>
+            <a href="findjob.html">FIND JOBS</a>
+            <a href="joblisting.html">JOB LISTING</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="redirect()">CONTACT</button>
+        <div class="dropdown-content">
+            <a href="Contactus.html">CONTACT US</a>
+            <a href="Aboutus.html">ABOUT US</a>
+    </div>
+  </div> 
+</div>
+    
+
+<div id="body">        
+
+    <h1 align=center style="color: #49205E">Staff Accountant</h1>    <br>
+    
+    <p style="font-size: 20px; margin-left: 30px; margin-right: 30px; margin-bottom: 50px; color: #5e2058">Saturna Group Chartered Professional Accountants LLP is a boutique firm located in downtown Vancouver. We specialize in audit, accounting, and consulting for publicly-listed companies in Canada and the United States. <br>
+    We are looking for dynamic individuals who have a keen interest in furthering their educational achievements with a career as a Chartered Professional Accountant. We offer a positive work environment and ample one-on-one training opportunities with the partners. We also offer full support in your educational goals to achieve your CPA designation, including payment of all courses and fees within the program, as well as paid time-off for each module and for the CFE examination.
+ </p>
+    
+     <a style="http://saturnagroup.com">http://saturnagroup.com</a>
+    
+    <div id="map"></div>
+    <br>
+</div>    
+    
+    
+<script>
+      function initMap() {
+        var myLatLng = {lat: 49.287606, lng: -123.119049};
+         
+ // Create a map object and specify the DOM element
+        // for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 16
+        });
+          
+      // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX9TwRU4GPFK8q36cdzjArYYHkwX9iUqo&callback=initMap"
+        async defer></script>    
+          
+             
+    </body>
+</html>

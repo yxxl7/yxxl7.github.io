@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <div class="header">
+        <img src="Unknown.png"/>
+    </div>
+    
+    <head>
+        <title>Job Hunting Website</title>
+        <link rel="stylesheet" type="text/css"
+href="styles.css"/>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <div class="navbar">
+            <a class="active" href="index.html">HOME</a>
+            <a href="findjob.html">FIND JOBS</a>
+            <a href="joblisting.html">JOB LISTING</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="redirect()">CONTACT</button>
+        <div class="dropdown-content">
+            <a href="Contactus.html">CONTACT US</a>
+            <a href="Aboutus.html">ABOUT US</a>
+    </div>
+  </div> 
+</div>
+    
+
+<div id="body">        
+
+    <h1 align=center style="color: #49205E">BlackTrax Firmware Developer (Part-Time)</h1><br>
+    
+    <p style="font-size: 20px; margin-left: 30px; margin-right: 30px; margin-bottom: 50px; color: #5e2058">
+As leaders of innovation for almost 25 years, CAST-Software is an award-winning company, delivering design and previsualization software tools for lighting and event specialists all around the world. Not only that but we include real-time live tracking systems that work seamlessly with our 3D software tools, which are quickly becoming industry standards to use. Precise and unique, offering continuity in design or freedom to experiment, our tracking system is the ultimate communication and control system. Studios, theatre and stages come alive as our tracking system communicates and controls robotic lights and cameras, laser systems, sound reinforcement and sound steering systems, multimedia display devices and interactive systems, and now communicating directly with third party gaming engines. Driven by passion, creativity, and technology, we love to see our efforts allow projects reach their true potential using our products. Be it covering theatre, concerts, tours, any type of live entertainment, indoor or outdoor, including film and now the gaming industry, it’s inspiring each time. Our team of like-minded, driven people connect in our small, friendly workplace, make magic happen.
+<br>
+If you share our passion, our drive for innovation, our commitment to customer excellence and pride in being a leader come and join us. Check out www.cast-soft.com for more information about us, our products and what we do and have done. We are sure you will be impressed. Then hit reply to this ad and send your resume with a cover letter, explaining why a job in tech at CAST is for you<br>
+As a part time BlackTrax Firmware Developer, you will work on the firmware for BlackTrax’s hardware products including the Beacon, TimeKeeper, and Router. You will also work on the C++ Windows application that interfaces with them for programming and networking commands. Finally, you will also work in a Linux environment working on prototyping and potentially implementing features that work directly with the main software. You will report to the BlackTrax Development Team Lead and be assigned features and tasks as described in the current release. You will be part of a small team, being the sole developer working on the products mentioned above, so you will have an opportunity to work on large features as it relates to them
+ </p>
+
+     <a style="margin-left: 50px" href="https://blacktrax.cast-soft.com">https://blacktrax.cast-soft.com</a>
+    
+    <div id="map"></div>
+    <br>
+</div>    
+    
+    
+<script>
+      function initMap() {
+        var myLatLng = {lat: 43.638086, lng: -79.474667};
+         
+ // Create a map object and specify the DOM element
+        // for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 16
+        });
+          
+      // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDX9TwRU4GPFK8q36cdzjArYYHkwX9iUqo&callback=initMap"
+        async defer></script>    
+          
+             
+    </body>
+</html>
